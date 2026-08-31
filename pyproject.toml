@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neural-style-transfer-cnn"
+version = "0.1.0"
+description = "A command-line neural style-transfer implementation using VGG-19 perceptual features."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.2",
+    "torchvision>=0.17",
+    "Pillow>=10.0",
+    "gradio>=5.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+style-transfer = "neural_style_transfer.cli:main"
+style-transfer-ui = "neural_style_transfer.frontend:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
