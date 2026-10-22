@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎨 Neural Style Transfer with VGG-19
+<img src="assets/banner.svg" width="100%" alt="Style Transfer: Neural style transfer on VGG-19" />
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-VGG--19-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
